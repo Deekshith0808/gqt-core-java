@@ -20,7 +20,7 @@ public class Pattern_NAME {
 		int n = sc.nextInt();
 		for(int i =0;i<n;i++) {
 			for(int j =0;j<n;j++)
-				if(j==0||(i==0 && j!=n-1)||(j==n-1 && i!=0 && i!=n-1)||(i==n-1 && j!=n-1)) {
+				if(j==0||(i==0 && j!=n-1)||(j==n-1 && i!=0 && i!=n-1)||(i==n-1 && j!=n-1)) {				//D
 					System.out.print("# ");
 				}
 				else {
@@ -29,7 +29,7 @@ public class Pattern_NAME {
 			System.out.print("   ");
 			
 				for(int j =0;j<n;j++)
-					if(i==0||j==0||i==n-1||i==n/2){
+					if(i==0||j==0||i==n-1||i==n/2){															//E
 						System.out.print("# ");
 					}
 					else {
@@ -37,7 +37,7 @@ public class Pattern_NAME {
 					}
 				System.out.print("   ");
 				for(int j =0;j<n;j++)
-					if(i==0||j==0||i==n-1||i==n/2) {
+					if(i==0||j==0||i==n-1||i==n/2) {														//E
 						System.out.print("# ");
 					}
 					else {
@@ -45,7 +45,14 @@ public class Pattern_NAME {
 					}
 				System.out.print("   ");
 				for(int j =0;j<n;j++)
-					if(j==0||i+j==n/2||i-j==n/2) {
+					if(j==0||i+j==n/2||i-j==n/2) {															//K
+						System.out.print("# ");
+					}
+					else {
+						System.out.print("  ");
+					}
+				for(int j =0;j<n;j++)
+					if(i==0||i==n/2||i==n-1||(j==0 && i<n/2)||(j==n-1 && i>=n/2)) {							//S
 						System.out.print("# ");
 					}
 					else {
@@ -53,7 +60,7 @@ public class Pattern_NAME {
 					}
 				System.out.print("   ");
 				for(int j =0;j<n;j++)
-					if(i==0||i==n/2||i==n-1||(j==0 && i<n/2)||(j==n-1 && i>=n/2)) {
+					if(i==n/2||j==0||j==n-1) {																//H
 						System.out.print("# ");
 					}
 					else {
@@ -61,7 +68,7 @@ public class Pattern_NAME {
 					}
 				System.out.print("   ");
 				for(int j =0;j<n;j++)
-					if(i==n/2||j==0||j==n-1) {
+					if(i==0||j==n/2||i==n-1) {																//I
 						System.out.print("# ");
 					}
 					else {
@@ -69,7 +76,7 @@ public class Pattern_NAME {
 					}
 				System.out.print("   ");
 				for(int j =0;j<n;j++)
-					if(i==0||j==n/2||i==n-1) {
+					if(i==0||j==n/2) {																		//T
 						System.out.print("# ");
 					}
 					else {
@@ -77,15 +84,7 @@ public class Pattern_NAME {
 					}
 				System.out.print("   ");
 				for(int j =0;j<n;j++)
-					if(i==0||j==n/2) {
-						System.out.print("# ");
-					}
-					else {
-						System.out.print("  ");
-					}
-				System.out.print("   ");
-				for(int j =0;j<n;j++)
-					if(i==n/2||j==0||j==n-1) {
+					if(i==n/2||j==0||j==n-1) {																//H
 						System.out.print("# ");
 					}
 					else {

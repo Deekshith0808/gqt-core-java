@@ -127,6 +127,6 @@ public class Message {
 			}
 			System.out.println();
 		}
-
+		sc.close();
 	}
 }
