@@ -1,0 +1,11 @@
+/**@author sai deekshith
+ * 
+ */
+package gqt375;
+public class P2 {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
